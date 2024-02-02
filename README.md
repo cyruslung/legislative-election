@@ -1,12 +1,13 @@
-# 2023 Mission 1 - 立委競選官網
+# 2023 THE F2E 前端修練精神時光屋 - 立委競選官網
 
 ![](https://images.thef2e.com//works/217_2023-11-07T08:29:32.597Z.png)
 
 ## 🔗 Link
 
-- [2023 THE F2E](https://2023.thef2e.com/news)
-- [Design](<https://www.figma.com/file/GDvhrmKAtFgcHe5aVjBci0/2023TheF2E-%E7%AC%AC%E4%B8%80%E9%9A%8E%E6%AE%B5-%E7%AB%8B%E5%A7%94%E7%AB%B6%E9%81%B8%E5%AE%98%E7%B6%B2(UNA)?type=design&node-id=0-1&mode=design>) (by Una)
-- [Demo](https://cat-campaign-website-iqko.vercel.app/) (by Iris Huang)
+- [2023 THE F2E](https://2023.thef2e.com/)
+- [Design - Mock Up](<https://www.figma.com/proto/GDvhrmKAtFgcHe5aVjBci0/2023TheF2E-%E7%AC%AC%E4%B8%80%E9%9A%8E%E6%AE%B5-%E7%AB%8B%E5%A7%94%E7%AB%B6%E9%81%B8%E5%AE%98%E7%B6%B2(UNA)?page-id=80%3A569&type=design&node-id=80-570&viewport=521%2C203%2C0.25&t=V9f9YjM3wHfkRUeV-1&scaling=scale-down>) (by Una)
+- [Design - Figma](<https://www.figma.com/file/GDvhrmKAtFgcHe5aVjBci0/2023TheF2E-%E7%AC%AC%E4%B8%80%E9%9A%8E%E6%AE%B5-%E7%AB%8B%E5%A7%94%E7%AB%B6%E9%81%B8%E5%AE%98%E7%B6%B2(UNA)?type=design&node-id=0-1&mode=design>) (by Una)
+- [Demo](https://legislator-campaign-official-website-iqko.vercel.app/) (by Cyrus)
 
 ## 🚀 Getting Started
 
@@ -14,16 +15,12 @@ Install the project
 
 ```bash
 $ npm install
-or
-$ yarn install
 ```
 
 Run the project
 
 ```bash
 $ npm run dev
-# or
-$ yarn dev
 ```
 
 ## 🔧 Built With
@@ -33,45 +30,20 @@ $ yarn dev
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Swiper](https://swiperjs.com/)
-- [aos](https://michalsnik.github.io/aos/)
+- [Aos](https://michalsnik.github.io/aos/)
 - [Animate.css](https://animate.style/)
-- [react-modal](https://www.npmjs.com/package/react-modal)
-- [dayjs](https://day.js.org/)
-
-## ✅ Todo
-
-- Swiper server side problems
-- Form validation
-- Jumbotron Animation
-
-THANK YOU!
-
-
-
-------------------------------------------------------------
-
-
-
-
-<div align="center">
-
-# 立委競選官網
-
-![立委競選官網封面](public/images/cover.png)
-
-</div>
-
-[Demo](https://timingjl.github.io/legislative-campaign-official-website-by-jhen/)
+- [React-modal](https://www.npmjs.com/package/react-modal)
+- [Dayjs](https://day.js.org/)
 
 ## 作品說明
 
-針對一位即將競選立法委員的候選人所設計的官方網站，致力於為候選人塑造出良好的形象，同時提供重要的政見主張資訊以及捐款指引。
+針對一位即將競選立法委員的AI候選人所設計的官方網站，致力於為候選人塑造出良好的形象，同時提供重要的政見主張資訊以及捐款指引。
 
 ## 系統說明
 
 **版本**
 
-本專案在 Node.js `v18.16.0` 環境下進行開發。
+本專案在 Node.js `v20.10.0` 環境下進行開發。
 
 **專案運行**
 
@@ -80,13 +52,6 @@ THANK YOU!
 ```shell
 npm install
 npm run dev
-```
-
-或
-
-```shell
-yarn
-yarn dev
 ```
 
 這些命令將安裝所有必要的相依套件，並啟動開發伺服器，讓您能夠開始開發和預覽您的專案。
@@ -107,10 +72,8 @@ yarn dev
 │   ├── utils/        # 包含各種輔助工具或功能的實用工具函數。
 │   ├── App.tsx       # 應用程式的主應用程式元件。
 │   ├── main.tsx      # 應用程式的主入口檔案。
-│   └── vite-env.d.ts # Vite的類型定義檔。
 ├── index.html        # 應用程式的主HTML文件，用於載入JavaScript檔案和渲染應用程式。
 ├── tsconfig.json     # TypeScript的設定文件，用於指定專案的編譯選項。
-├── vite.config.ts    # Vite的設定文件，用於配置建置工具Vite的行為。
 ├── package.json      # 專案的npm套件設定文件，包含了專案依賴和腳本。
 ├── DESIGN.md         # 設計稿、設計規範等相關說明
 └── README.md         # 包含項目的簡要描述和使用說明的自述文件。
@@ -126,7 +89,7 @@ yarn dev
 
 **建置工具**
 
-- Vite：用於加速前端開發和建置最佳化的建置工具。
+- Next.js：用於快速創建高效React，輕鬆實現靜態生成和伺服器端渲染，提供更好的使用者體驗和 SEO。
 
 **類型系統**
 
@@ -139,8 +102,3 @@ yarn dev
 **部署和託管**
 
 - gh-pages：用於將應用程式部署到 GitHub Pages，以便在線上示範和分享專案。
-
-## 相關連結
-
-- [關卡資訊 | 第一關 - 立委競選官網](https://chalk-freedom-ec6.notion.site/b09625633b8d46dcb7908c033d01dbce)
-- [設計稿（Designed by jhen）](https://www.figma.com/file/DCnuTZQ00D5VHiDkBLhxQ3/2023-The-F2E-%E7%AB%8B%E5%A7%94%E7%AB%B6%E9%81%B8%E5%AE%98%E7%B6%B2?type=design&node-id=139-170&mode=design&t=UsLYBWxOc2z0cFG2-0)
