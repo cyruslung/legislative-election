@@ -45,19 +45,25 @@ function DonateForm({ onClick }: DonateFormProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [hasError, setHasError] = useState(false);
 
+  const [customDonateAmt, setCustomDonateAmt] = useState<number>(0);
+  const [inputValue, setInputValue] = useState<string>('');
+
   const { isDesktop, scale } = useIsDesktop();
 
   const handlePlanClick = (id: planId) => () => {
     setSelectedPlanId(id);
   };
 
-  // const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-  //   const val = +event.currentTarget.value;
-  //   setCustomDonateAmt(val);
-  // };
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue(event.target.value);
+  };
 
   const handleInputBlur = () => {
     setHasError(!inputRef.current);
+    setCustomDonateAmt(parseInt(inputValue)); // 轉換輸入的值為數字並更新狀態
+
+    alert("感謝您小額捐款" + inputValue + "元!");
+    onClick();
   };
 
   const handleFormSubmit = (event: FormEvent) => {
@@ -70,7 +76,8 @@ function DonateForm({ onClick }: DonateFormProps) {
       amount: selectedPlan.amount,
     };
 
-    alert(JSON.stringify(postData));
+    // alert(JSON.stringify(postData));
+    alert("感謝您小額捐款" + JSON.stringify(postData.amount) + "元!");
     onClick();
   };
 
@@ -117,10 +124,9 @@ function DonateForm({ onClick }: DonateFormProps) {
                 id={customPlanInputId}
                 placeholder='請輸入捐款金額'
                 type='number'
-                // onChange={handleInputChange}
+                value={inputValue} // 這裡加入輸入框的值
+                onChange={handleInputChange} // 處理輸入框值的變更
                 onBlur={handleInputBlur}
-                // inputRef={inputRef}
-                // error={hasError}
               />
             </div>
           </PlanCardWrapper>
